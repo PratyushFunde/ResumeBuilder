@@ -1,0 +1,26 @@
+.contact {
+    background-color: yellow;
+    // width: fit-content;
+    min-width: fit-content;
+    min-height: fit-content;
+    display: inline-block;
+    padding: 10px;
+    // margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    // height: fit-content;
+    resize: both;
+    overflow: hidden;
+    // position: fixed;
+}
+
+
+.example-handle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ccc;
+    cursor: move;
+    width: 24px;
+    height: 24px;
+  }

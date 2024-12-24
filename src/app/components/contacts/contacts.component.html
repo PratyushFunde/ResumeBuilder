@@ -1,0 +1,28 @@
+<div class="contact" (mousedown)="$event.stopPropagation()" cdkDrag (dragover)="onDragOver($event)"
+  [cdkDragDisabled]="edit" cdkDragBoundary=".resume" [style.backgroundColor]="backgroundColor" (drop)="onDrop($event)">
+  <button (click)="handleDelete($event)" *ngIf="delete" class="btn btn-danger btn-sm">Delete</button>
+  <p [contentEditable]="edit" value="default">abcgmail.com</p>
+  <p [contentEditable]="edit" (mousedown)="$event.stopPropagation()">4567190</p>
+  <p [contentEditable]="edit"
+    (mousedown)="$event.stopPropagation()">linkedin.com</p>
+
+  <!-- <button (click)="handleEdit()">Move</button> -->
+</div>
+
+<!-- <input
+  type="color"
+  class="color-picker"
+  [(ngModel)]="selectedColor"
+  draggable="true" (dragstart)="onDragStart($event)"
+   />
+<p draggable="true" (dragstart)="onDragStart($event)">{{selectedColor}}</p>
+
+<div 
+  class="drag-source" 
+  draggable="true" 
+  (dragstart)="onDragStart($event)">
+  {{selectedColor}}
+</div> -->
+
+
+

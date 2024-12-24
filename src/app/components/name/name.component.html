@@ -1,0 +1,5 @@
+<div class="main name" cdkDrag [cdkDragDisabled]="edit" cdkDragBoundary=".resume" (mousedown)="$event.stopPropagation()" (dragover)="onDragOver($event)" (drop)="onDrop($event)" [style.backgroundColor]="backgroundColor">
+    <button (click)="handleDelete($event)" *ngIf="delete" class="btn btn-danger btn-sm">Delete</button>
+    <h1 [contentEditable]="edit" >Name:My name</h1>
+    <h2 [contentEditable]="edit" >Age:</h2>
+</div>

@@ -1,0 +1,12 @@
+<!-- font-size-changer.component.html -->
+<div>
+    <label for="fontSizeSelect">Select Font Size:</label>
+    <select id="fontSizeSelect" (change)="onFontSizeChange($event)">
+      <option *ngFor="let size of fontSizes" [value]="size">{{ size }}px</option>
+    </select>
+  </div>
+  
+  <div class="preview" [ngStyle]="{ 'font-size': selectedFontSize + 'px' }">
+    This is a preview text with the selected font size.
+  </div>
+  

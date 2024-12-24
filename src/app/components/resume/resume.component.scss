@@ -1,0 +1,57 @@
+.resume {
+  // width: 1500mm;
+  // height: 1400mm;
+  // width: 100%;  /* A4 width in pixels (landscape) */
+  // height: auto;
+  width: 210mm;
+  height: 297mm;
+}
+
+#pdfContent{
+  margin: 0;
+  padding: 0;
+  width: 210mm;    /* Ensure this matches the A4 page width */
+  max-height: 297mm;
+  overflow: hidden;
+  border: 2px dotted black;
+}
+
+
+.main{
+  display: flex;
+  justify-content: space-around;
+  // border: 2px dotted yellow;
+  // position:fixed;
+}
+
+.sidebar{
+  // border: 2px solid red;
+  width: 30%;
+  height: 100%;
+}
+
+.controls{
+  // border :2px solid red ;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: 50%;
+  gap: 5rem;
+  
+}
+
+.color{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header{
+  margin-top: 1rem;
+}

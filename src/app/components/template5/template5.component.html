@@ -1,0 +1,16 @@
+<div class="template5 main" (mousedown)="$event.stopPropagation()" cdkDrag (dragover)="onDragOver($event)"
+[cdkDragDisabled]="edit" cdkDragBoundary=".resume" [style.backgroundColor]="backgroundColor" (drop)="onDrop($event)">
+    <button (click)="handleDelete($event)" *ngIf="delete" class="btn btn-danger btn-sm">Delete</button>
+    <h1 [contentEditable]="edit">[Your Name]</h1>
+    <h3 [contentEditable]="edit">Contact Information:</h3>
+    <p [contentEditable]="edit">Email: [Your Email]</p>
+    <p [contentEditable]="edit">Phone: [Your Phone]</p>
+  
+    <h3 [contentEditable]="edit">Experience:</h3>
+    <p [contentEditable]="edit">[Job Title] at [Company], [Start Date] - [End Date]</p>
+    <p [contentEditable]="edit">[Job Description]</p>
+  
+    <h3 [contentEditable]="edit">Education:</h3>
+    <p [contentEditable]="edit">[Degree] - [Institution], [Year]</p>
+  </div>
+  

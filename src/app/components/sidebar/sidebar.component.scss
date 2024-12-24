@@ -1,0 +1,41 @@
+.main{
+    border: 2px solid darkblue;
+    height: 700px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.search{
+    // border: 2px solid yellow;
+    padding:0.5rem ;
+}
+
+input{
+
+    // justify-self: center;
+    width: 70%;
+    padding: 0.3rem;
+    border-radius: 7px;
+
+}
+
+.components{
+    // border: 2px solid cyan;
+    min-height: 100%;
+    padding: 1rem;
+}
+
+.bd{
+    // border: 2px solid orangered;
+    height: fit-content;
+    width: fit-content;
+}
+
+.componentBackground{
+    background-color: rgb(182, 182, 76);
+    padding: 1rem;
+    margin-top: 7px;
+}
+
+
+

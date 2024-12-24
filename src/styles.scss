@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+p{
+    width: fit-content;
+}
+
+.bd1 { border: 2px dotted #000; } /* Black */
+.bd2 { border: 2px dotted #ff0000; } /* Red */
+.bd3 { border: 2px dotted #00ff00; } /* Green */
+.bd4 { border: 2px dotted #0000ff; } /* Blue */
+.bd5 { border: 2px dotted #ffff00; } /* Yellow */
+.bd6 { border: 2px dotted #ff00ff; } /* Magenta */
+.bd7 { border: 2px dotted #00ffff; } /* Cyan */
+.bd8 { border: 2px dotted #808080; } /* Gray */
+.bd9 { border: 2px dotted #ffa500; } /* Orange */
+.bd10 { border: 2px dotted #800080; } /* Purple */
+
+.main{
+    padding: 1rem;
+}

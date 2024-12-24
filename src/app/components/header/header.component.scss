@@ -1,0 +1,14 @@
+.main{
+    border: 2px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding: 1rem;
+    background-color: rgb(186, 202, 202);
+    font-size: larger;
+    border-radius: 7px;
+    p{
+        margin: 0;
+    }
+}

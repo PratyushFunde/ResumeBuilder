@@ -1,0 +1,27 @@
+<div class="main project" cdkDrag [cdkDragDisabled]="edit" cdkDragBoundary=".resume" (mousedown)="$event.stopPropagation()" (dragover)="onDragOver($event)" (drop)="onDrop($event)" [style.backgroundColor]="backgroundColor">
+  <button (click)="handleDelete($event)" *ngIf="delete" class="btn btn-danger btn-sm">Delete</button>
+    <h1 [contentEditable]="edit">Name: [Your Name]</h1>
+    <h2 [contentEditable]="edit">Contact Information:</h2>
+    <p [contentEditable]="edit">Email: [Your Email]</p>
+    <p [contentEditable]="edit">Phone: [Your Phone]</p>
+  
+    <h2>Skills:</h2>
+    <ul>
+      <li [contentEditable]="edit">[Skill 1]</li>
+      <li [contentEditable]="edit">[Skill 2]</li>
+      <li [contentEditable]="edit">[Skill 3]</li>
+    </ul>
+  
+    <h2>Projects:</h2>
+    <div>
+      <h3 [contentEditable]="edit">[Project Name]</h3>
+      <p [contentEditable]="edit">[Short Description]</p>
+      <p [contentEditable]="edit">Technologies: [List of Technologies]</p>
+    </div>
+    <div>
+      <h3 [contentEditable]="edit">[Project Name]</h3>
+      <p [contentEditable]="edit">[Short Description]</p>
+      <p [contentEditable]="edit">Technologies: [List of Technologies]</p>
+    </div>
+  </div>
+  
